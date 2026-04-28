@@ -133,6 +133,28 @@ body {
   }
 }
 
+.page-banner{
+  margin-top: 80px;
+  padding: 70px 0px;
+  background-color: var(--primary);
+}
+
+.page-banner .banner-wrapper .banner-title{
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.page-banner .page-breadcrumb ul li{
+  font-size: 16px;
+  color: var(--white);
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
