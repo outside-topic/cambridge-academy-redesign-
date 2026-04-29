@@ -136,7 +136,7 @@ body {
 .page-banner{
   margin-top: 80px;
   padding: 70px 0px;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 .page-banner .banner-wrapper .banner-title{

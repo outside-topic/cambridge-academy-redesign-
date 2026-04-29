@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             loop: true,
             effect: 'coverflow',
             coverflowEffect: {
-                rotate: 30,
+                rotate: 50,
                 slideShadows: false,
             },
         })
@@ -86,27 +86,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     }
 
-    var slider = new tns({
-        container: '.testimonial-active',
-        items: 2,
-        slideBy: 'page',
-        autoplay: false,
-        mouseDrag: true,
-        gutter: 0,
-        nav: true,
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 4000,
-        controls: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            992: {
-                items: 2,
+    if(document.querySelector('.testimonial-active')){
+        new tns({
+            container: '.testimonial-active',
+            items: 2,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayButtonOutput: false,
+            autoplayTimeout: 4000,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                992: {
+                    items: 2,
+                }
             }
-        }
-    });
+        });
+    }
 
 })
