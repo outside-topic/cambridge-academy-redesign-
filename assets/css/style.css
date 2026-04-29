@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /*===========================
   COMMON css 
 ===========================*/
@@ -75,6 +75,10 @@
 
 .pt-100{
   padding-top: 100px;
+}
+
+.mt-100{
+  margin-top: 100px;
 }
 
 .pt-70{
@@ -1738,7 +1742,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("assets/images/call-action/overlay.png");
+  /* background-image: url("assets/images/call-action/overlay.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
