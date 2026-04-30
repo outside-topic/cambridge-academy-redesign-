@@ -290,6 +290,12 @@ p {
   margin: 0px;
 }
 
+@media only screen and (max-width: 992px){
+  p{
+    color: var(--black);
+  }
+}
+
 .text-small {
   font-size: 0.875em;
   line-height: 1.5;
@@ -691,6 +697,12 @@ only screen and (min-width: 1400px) {
   opacity: 1;
 }
 
+@media  only screen and (max-width: 992px) {
+  .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
+    color: var(--white);
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
   .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
@@ -714,6 +726,22 @@ only screen and (min-width: 1400px) {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+
+/* Position submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Optional: show on hover (desktop vibe) */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -1320,6 +1348,13 @@ only screen and (min-width: 1400px) {
 
 .about-area-custom .about-content {
   max-width: 480px;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-area-custom .about-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .about-area-custom .about-content .text {
@@ -2047,6 +2082,7 @@ only screen and (min-width: 1400px) {
 @media (max-width: 767px) {
   .testimonial-section .single-testimonial .testimonial-info-wrapper .rating {
     margin-top: 15px;
+    padding-right: 0;
   }
 }
 

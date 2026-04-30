@@ -111,4 +111,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
         });
     }
 
+    // submenu js
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    let submenu = this.nextElementSibling;
+
+    // close other open submenus (optional but cleaner UX)
+    let parentMenu = this.closest('.dropdown-menu');
+    parentMenu.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
+      if (menu !== submenu) {
+        menu.classList.remove('show');
+      }
+    });
+
+    // toggle current submenu
+    submenu.classList.toggle('show');
+  });
+});
+
+// Close submenu when parent dropdown closes
+document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+  dropdown.addEventListener('hidden.bs.dropdown', function() {
+    this.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
+      menu.classList.remove('show');
+    });
+  });
+});
+
 })
